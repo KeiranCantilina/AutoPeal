@@ -87,15 +87,15 @@ void ring_peal(){
 
 void relay_test(){
   digitalWrite(bell1pin, HIGH);
-  delay(3000);
+  delay(2000);
   digitalWrite(bell1pin, LOW);
   delay(1000);
   digitalWrite(bell2pin, HIGH);
-  delay(3000);
+  delay(2000);
   digitalWrite(bell2pin, LOW);
   delay(1000);
   digitalWrite(bell3pin, HIGH);
-  delay(3000);
+  delay(2000);
   digitalWrite(bell3pin, LOW);
 }
 
@@ -138,7 +138,7 @@ void setup() {
   Serial.println("\nTesting relays...");
   relay_test();
   Serial.println("Relay testing complete.");
-  Serial.println("Sync with NTP will complete in a few moments.");
+  Serial.println("\nSync with NTP will complete in a few moments.\n");
   // by default, the NTP will be started after 60 secs
 }
 

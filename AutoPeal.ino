@@ -101,7 +101,12 @@ void relay_test(){
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Welcome to AutoPeal\n");
+  delay(1000);
+  Serial.println("\n\nWelcome to AutoPeal!\n");
+  Serial.println("Version: 1.0");
+  Serial.print("Build date: ");
+  Serial.println(__DATE__ " " __TIME__);
+  Serial.println();
 
   pinMode(bell1pin, OUTPUT);
   digitalWrite(bell1pin, LOW);

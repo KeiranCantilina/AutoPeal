@@ -121,7 +121,7 @@ void setup() {
   Serial.print("SSID: ");
   Serial.println(STASSID);
   Serial.print("PASSWORD: ");
-  Serial.println(STAPSK\n);
+  Serial.println(STAPSK);
   Serial.print ("Connecting to wifi");
   while (WiFi.status() != WL_CONNECTED) {
     delay(200);

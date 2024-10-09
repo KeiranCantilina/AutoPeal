@@ -76,11 +76,11 @@ void ring_peal(){
   delay(120000);
 
   // Ring down
-  digitalWrite(bell1pin, HIGH);
+  digitalWrite(bell1pin, LOW);
   delay(10000);
-  digitalWrite(bell2pin, HIGH);
+  digitalWrite(bell2pin, LOW);
   delay(5000);
-  digitalWrite(bell3pin, HIGH);
+  digitalWrite(bell3pin, LOW);
 
   Serial.println("PEAL FINISHED");
 }
